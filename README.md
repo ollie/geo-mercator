@@ -76,7 +76,7 @@ Also check the dependecy gems like `k_means_pp` and `exifr`.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'geo'
+gem 'geo', git: 'https://github.com/ollie/geo-mercator.git'
 ```
 
 And then execute:
