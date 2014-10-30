@@ -30,8 +30,24 @@ RSpec.describe Geo::Viewport do
     expect(viewport.center).to eq([8.054945833333333, 48.206891666666664])
   end
 
+  it 'center_lon' do
+    expect(viewport.center_lon).to eq(8.054945833333333)
+  end
+
+  it 'center_lat' do
+    expect(viewport.center_lat).to eq(48.206891666666664)
+  end
+
   it 'dimensions' do
     expect(viewport.dimensions).to eq([1280, 960])
+  end
+
+  it 'width' do
+    expect(viewport.width).to eq(1280)
+  end
+
+  it 'height' do
+    expect(viewport.height).to eq(960)
   end
 
   it 'zoom' do

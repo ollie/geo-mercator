@@ -28,7 +28,11 @@ module Geo
   #   map_bounds          # => [6.9201500000000005, 45.46555, 9.189741666666666, 50.948233333333334]
   #   viewport.bounds     # => [1.021728515625, 44.574817404670306, 15.084228515625, 51.60437164681676]
   #   viewport.dimensions # => [1280, 960]
+  #   viewport.width      # => 1280
+  #   viewport.height     # => 960
   #   viewport.center     # => [8.054945833333333, 48.206891666666664]
+  #   viewport.lon        # => 8.054945833333333
+  #   viewport.lat        # => 48.206891666666664
   #   viewport.zoom       # => 7
   class Viewport
     # Pixel dimensions of the map.
@@ -74,6 +78,34 @@ module Geo
       @center     = calculate_center(*bounds)
       @zoom       = calculate_zoom(bounds, dimensions, min_zoom, max_zoom)
       @bounds     = calculate_new_bounds(dimensions)
+    end
+
+    # Longitude of the center.
+    #
+    # @return [Float]
+    def center_lon
+      center[0]
+    end
+
+    # Latitude of the center.
+    #
+    # @return [Float]
+    def center_lat
+      center[1]
+    end
+
+    # Width of the map in pixels.
+    #
+    # @return [Fixnum]
+    def width
+      dimensions[0]
+    end
+
+    # Height of the map in pixels.
+    #
+    # @return [Fixnum]
+    def height
+      dimensions[1]
     end
 
     # Calculate the map bounds center in +[lon, lat]+ GPS coords.

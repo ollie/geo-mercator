@@ -56,7 +56,11 @@ viewport   = Geo::Viewport.new(map_bounds, dimensions)
 map_bounds          # => [6.9201500000000005, 45.46555, 9.189741666666666, 50.948233333333334]
 viewport.bounds     # => [1.021728515625, 44.574817404670306, 15.084228515625, 51.60437164681676]
 viewport.dimensions # => [1280, 960]
+viewport.width      # => 1280
+viewport.height     # => 960
 viewport.center     # => [8.054945833333333, 48.206891666666664]
+viewport.center_lon # => 8.054945833333333
+viewport.center_lat # => 48.206891666666664
 viewport.zoom       # => 7
 ```
 
