@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'GPS points to Mercator map calculator.'
   spec.description   = 'This is just a tiny library which abstracts away ' \
                        'working with GPS points and bounds on the Mercator map.'
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/ollie/geo-mercator'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
