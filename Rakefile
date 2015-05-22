@@ -11,8 +11,3 @@ desc 'Same as :combo but build a gem, too'
 task mega_combo: :combo do
   sh 'gem build geo.gemspec'
 end
-
-desc 'Start a console'
-task :console do
-  sh 'bundle exec pry -I ./lib -r ./lib/geo.rb'
-end

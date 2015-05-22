@@ -1,6 +1,4 @@
-# Geo
-
-[![Build Status](https://travis-ci.org/ollie/geo.svg?branch=master)](https://travis-ci.org/ollie/geo)
+# Geo [![Build Status](https://img.shields.io/travis/ollie/geo/master.svg)](https://travis-ci.org/ollie/geo) [![Code Climate](https://img.shields.io/codeclimate/github/ollie/geo.svg)](https://codeclimate.com/github/ollie/geo)
 
 This is just a tiny library (actually a gem but not published on rubygems.org)
 which abstracts away working with GPS points and bounds on the Mercator map.
@@ -86,6 +84,10 @@ gem 'geo', git: 'https://github.com/ollie/geo-mercator.git'
 And then execute:
 
     $ bundle
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
 
 ## Contributing
 
