@@ -1,4 +1,4 @@
-# Geo [![Build Status](https://img.shields.io/travis/ollie/geo/master.svg)](https://travis-ci.org/ollie/geo) [![Code Climate](https://img.shields.io/codeclimate/github/ollie/geo.svg)](https://codeclimate.com/github/ollie/geo)
+# Geo [![Build Status](https://img.shields.io/travis/ollie/geo-mercator/master.svg)](https://travis-ci.org/ollie/geo-mercator) [![Code Climate](https://img.shields.io/codeclimate/github/ollie/geo-mercator.svg)](https://codeclimate.com/github/ollie/geo-mercator)
 
 This is just a tiny library (actually a gem but not published on rubygems.org)
 which abstracts away working with GPS points and bounds on the Mercator map.
