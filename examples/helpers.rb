@@ -34,7 +34,7 @@ def exif(paths)
     gps = paths.map do |path|
       gps = EXIFR::JPEG.new(path).gps
       next unless gps
-      # puts "#{ File.basename(path) }: #{ gps.latitude } #{ gps.longitude }"
+      # puts "#{File.basename(path)}: #{gps.latitude} #{gps.longitude}"
       [gps.longitude, gps.latitude]
     end
 
