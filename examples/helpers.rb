@@ -20,7 +20,7 @@ def measure(heading)
   print heading
   result = yield
   end_time = Time.now - start_time
-  puts " (#{ end_time } s)"
+  puts " (#{end_time} s)"
   result
 end
 
@@ -170,11 +170,11 @@ end
 # @return [String]
 def mapbox_url(markers, viewport)
   markers = markers.map.with_index do |p, i|
-    "pin-l-#{ i }+f44(#{ p[0] },#{ p[1] })"
+    "pin-l-#{i}+f44(#{p[0]},#{p[1]})"
   end.join(',')
 
-  "http://api.tiles.mapbox.com/v4/examples.map-zr0njcqy/#{ markers }/" \
-  "#{ viewport.center[0] },#{ viewport.center[1] },#{ viewport.zoom }/" \
-  "#{ viewport.dimensions[0] }x#{ viewport.dimensions[1] }.png?access_token=" \
+  "http://api.tiles.mapbox.com/v4/examples.map-zr0njcqy/#{markers}/" \
+  "#{viewport.center[0]},#{viewport.center[1]},#{viewport.zoom}/" \
+  "#{viewport.dimensions[0]}x#{viewport.dimensions[1]}.png?access_token=" \
   'pk.eyJ1IjoibWFwYm94IiwiYSI6IlhHVkZmaW8ifQ.hAMX5hSW-QnTeRCMAy9A8Q'
 end

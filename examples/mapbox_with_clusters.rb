@@ -46,14 +46,14 @@ gps_data = exif(photos)
 # Calculate the westmost, southmost, eastmost and northmost coordinates.
 map_bounds = Geo::Utils.bounds(gps_data)
 
-puts "Found #{ gps_data.size } photos"
-puts "Bounds are #{ map_bounds }"
+puts "Found #{gps_data.size} photos"
+puts "Bounds are #{map_bounds}"
 
 viewport = measure 'Calculating viewport' do
   Geo::Viewport.new(map_bounds, [1280, 960])
 end
 
-puts "Viewport #{ viewport.inspect }"
+puts "Viewport #{viewport.inspect}"
 
 # We want 5 groups.
 clusters = measure 'Clustering data' do

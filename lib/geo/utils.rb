@@ -106,7 +106,7 @@ module Geo
     # @return [Array<Float>]
     def ll_to_world_coord(lon_deg, lat_deg)
       wx = ORIGIN_PX.first + PIXELS_PER_RAD * lon_deg_to_rad(lon_deg)
-      wy = ORIGIN_PX.last  - PIXELS_PER_RAD * lat_deg_to_rad_scaled(lat_deg)
+      wy = ORIGIN_PX.last - PIXELS_PER_RAD * lat_deg_to_rad_scaled(lat_deg)
 
       [wx.to_f, wy.to_f]
     end

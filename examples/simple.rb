@@ -27,12 +27,12 @@ map_bounds = Geo::Utils.bounds(gps_data)
 dimensions = [1280, 960]
 viewport   = Geo::Viewport.new(map_bounds, dimensions)
 
-puts "Map bounds before recalculation: #{ map_bounds }"
-puts "Map bounds after recalculation:  #{ viewport.bounds }"
-puts "Map dimensions in pixels:        #{ viewport.dimensions }"
-puts "Map width in pixels:             #{ viewport.width }"
-puts "Map height in pixels:            #{ viewport.height }"
-puts "Map center in lon/lat:           #{ viewport.center }"
-puts "Map center longitude:            #{ viewport.center_lon }"
-puts "Map center latitude:             #{ viewport.center_lat }"
-puts "Map zoom level:                  #{ viewport.zoom }"
+puts "Map bounds before recalculation: #{map_bounds}"
+puts "Map bounds after recalculation:  #{viewport.bounds}"
+puts "Map dimensions in pixels:        #{viewport.dimensions}"
+puts "Map width in pixels:             #{viewport.width}"
+puts "Map height in pixels:            #{viewport.height}"
+puts "Map center in lon/lat:           #{viewport.center}"
+puts "Map center longitude:            #{viewport.center_lon}"
+puts "Map center latitude:             #{viewport.center_lat}"
+puts "Map zoom level:                  #{viewport.zoom}"
